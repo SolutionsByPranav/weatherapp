@@ -21,7 +21,7 @@ public class WeatherController {
     }
 
     //New endpoint: latitude and longitude
-    @GetMapping("/api/health/{lat}/{long}")
+    @GetMapping("/api/weather/{lat}/{long}")
     public Map getWeather(
             @PathVariable("lat") double latitude,
             @PathVariable("long") double longitude
